@@ -1,0 +1,169 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196f3;
+    --hero-text-color: #fff;
+    --bgc-secondary-color: #f5f4fA;
+    --bgc-temporary-color: #2F303A;
+}
+
+
+.page {
+    background-color: #fff;
+    color: var(--primary-text-color);
+  
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+   }
+
+.logo{
+    color:#000;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.accent {
+color: var(--accent-color);
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+
+/* Site-nav */
+
+.site-nav {
+    color: var(--title-text-color);
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+.contact-nav .link{
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+}
+
+.contact-nav .link:hover,
+.contact-nav .link:focus {
+    color: var(--accent-color);
+}
+
+
+/* Hero */
+
+.hero-title {
+    color: #fff;
+    background-color: var(--bgc-temporary-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.button {
+    color: var(--hero-text-color);
+    background-color: var(--accent-color);
+    font-size: 16px;
+}
+
+
+/* Section */
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.section-title{
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    
+}
+.title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+}
+
+.portfolio-list .title {
+    color: var(--title-text-color);
+}
+
+.item {
+    color:var(--primary-text-color);
+    font-size: 14px;
+}
+
+
+.team .title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+   
+}
+
+.team {
+    font-weight: 400;
+    line-height: 1.2;
+    background-color: var(--bgc-secondary-color);
+ 
+}
+
+/* Footer */
+
+.adress .logo {
+color: var(--hero-text-color);
+}
+
+.adress {
+    background-color: var(--bgc-temporary-color);
+    color: var(--hero-text-color);
+}
+
+.adress .link {
+    text-decoration: none;
+    color: var(--hero-text-color);
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.7;
+}
+
+.adress .contacts {
+    color: rgba(255, 255, 255, 0.6);
+}
