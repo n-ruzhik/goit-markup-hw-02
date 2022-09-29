@@ -2,11 +2,11 @@
     --primary-text-color: #757575;
     --title-text-color: #212121;
     --accent-color: #2196f3;
+    --hero-button-active: #188CE8;
     --hero-text-color: #fff;
-    --bgc-secondary-color: #f5f4fA;
-    --bgc-temporary-color: #2F303A;
+    --bgc-secondary-color: #f5f4fa;
+    --bgc-temporary-color: #2f303a;
 }
-
 
 .page {
     background-color: #fff;
@@ -17,7 +17,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
-   }
+}
 
 .logo{
     color:#000;
@@ -25,6 +25,7 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
+    letter-spacing: 0.03em;
     text-decoration: none;
 }
 
@@ -39,6 +40,7 @@ color: var(--accent-color);
 .link {
     text-decoration: none;
 }
+
 
 
 /* Site-nav */
@@ -58,7 +60,7 @@ color: var(--accent-color);
 }
 
 .contact-nav .link{
-    color: var(--primary-text-color);
+    color: inherit;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
@@ -70,25 +72,45 @@ color: var(--accent-color);
     color: var(--accent-color);
 }
 
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+
 
 /* Hero */
+.hero {
+    background-color: var(--bgc-temporary-color);
+}
 
 .hero-title {
-    color: #fff;
-    background-color: var(--bgc-temporary-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    color: #fff;
 }
 
-.button {
+.hero-button { 
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+
+    border: 0;
+    border-radius: 4px;
     color: var(--hero-text-color);
     background-color: var(--accent-color);
-    font-size: 16px;
+
+    cursor:pointer;
 }
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--hero-button-active);
+}
+
 
 
 /* Section */
@@ -118,18 +140,25 @@ color: var(--accent-color);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
-    letter-spacing: 0.03em;
 }
 
-.portfolio-list .title {
+
+.portfolio .title {
     color: var(--title-text-color);
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
 }
 
 .item {
     color:var(--primary-text-color);
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 1.9;
 }
 
+.team-box {
+    background: var(--hero-text-color);
+}
 
 .team .title {
     font-weight: 500;
@@ -139,31 +168,62 @@ color: var(--accent-color);
 }
 
 .team {
-    font-weight: 400;
     line-height: 1.2;
     background-color: var(--bgc-secondary-color);
  
 }
 
+
+
+/* Portfolio button*/
+
+.filter-button {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em; 
+
+    border: 0;
+    border-radius: 4px;
+    
+    color: var(--title-text-color);
+    background-color: var(--bgc-secondary-color);
+    
+    cursor: pointer;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+    background-color: var(--accent-color);
+    color: var(--hero-text-color);
+}
+
+
+
 /* Footer */
 
-.adress .logo {
+.contacts .logo {
 color: var(--hero-text-color);
 }
 
-.adress {
+.contacts {
     background-color: var(--bgc-temporary-color);
     color: var(--hero-text-color);
 }
 
-.adress .link {
+.contacts .link {
     text-decoration: none;
     color: var(--hero-text-color);
     font-weight: 400;
     font-style: normal;
     line-height: 1.7;
-}
 
-.adress .contacts {
     color: rgba(255, 255, 255, 0.6);
 }
+
+.contacts .link:hover,
+.contacts .link:focus {
+    color: var(--accent-color);
+}
+
