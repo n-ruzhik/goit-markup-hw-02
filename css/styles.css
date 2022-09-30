@@ -39,12 +39,16 @@ color: var(--accent-color);
 
 .link {
     text-decoration: none;
+    color: var(--title-text-color);
 }
 
 
 
 /* Site-nav */
 
+.site-nav .link.current {
+    color: var(--accent-color);
+}
 .site-nav {
     color: var(--title-text-color);
     letter-spacing: 0.02em;
@@ -69,10 +73,6 @@ color: var(--accent-color);
 
 .contact-nav .link:hover,
 .contact-nav .link:focus {
-    color: var(--accent-color);
-}
-
-.site-nav .link.current {
     color: var(--accent-color);
 }
 
