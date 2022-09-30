@@ -14,9 +14,7 @@
   
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
-    font-weight: 400;
     font-size: 14px;
-    line-height: 1.7;
 }
 
 .logo{
@@ -93,6 +91,7 @@ color: var(--accent-color);
 }
 
 .hero-button { 
+    font-family: Roboto, sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
@@ -142,6 +141,9 @@ color: var(--accent-color);
     line-height: 1.1;
 }
 
+.features .title {
+    text-transform: uppercase;
+}
 
 .portfolio .title {
     color: var(--title-text-color);
@@ -212,14 +214,17 @@ color: var(--hero-text-color);
     color: var(--hero-text-color);
 }
 
+
 .contacts .link {
     text-decoration: none;
-    color: var(--hero-text-color);
-    font-weight: 400;
     font-style: normal;
     line-height: 1.7;
 
     color: rgba(255, 255, 255, 0.6);
+}
+
+.contacts .location {
+    color: var(--hero-text-color);
 }
 
 .contacts .link:hover,
